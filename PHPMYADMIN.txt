@@ -1,0 +1,10 @@
+// Fillimisht bane RUN xampp-in 
+// Pastaj shko tek localhost/phpmyadmin dhe krijo nje database te re me emrin: portfolio
+// Dhe bane paste kodin tek pjesa e SQL:
+
+CREATE TABLE `portfolio` (
+  `name` int(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `subjects` varchar(50) NOT NULL,
+  `message` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

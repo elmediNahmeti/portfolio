@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav a {
+    color: black;
+    font-size: 20px;
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav a:hover {
+    border: none;
+    border-bottom: 3px solid #7051EF;
+    transition: .3s;
+    color: #3A395E;
+}
+
+/* about text */
+.aboutus {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.aboutus .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus .info img {
+    width: 500px;
+    height: 500px;
+
+}
+.aboutus .info .about-text {
+    display: block;
+}
+.aboutus .info .about-text hr {
+    width: 80px;
+    height: 3px;
+    background-color: #7051EF;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.aboutus .info .about-text h3 {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutus .info .about-text h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #7051EF;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutus .info .about-text p {
+    width: 70%;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.aboutus .info .about-text button {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 12px 20px;
+    background-color: #7051EF;
+    color: #fff;
+    border: none;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.aboutus .info .about-text button:hover {
+    background-color: #19F4F1;
+    color: #000;
+    font-weight: 600;
+    transition: .3s;
+}
+#resume-btn {
+    margin-left: 30px;
+}
+
+.aboutus .info .about-text button a {
+    color: #fff;
+}
+
+/* servies */
+.services {
+    height: 90vh;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title hr {
+    width: 80px;
+    height: 3px;
+    background-color: #7051EF;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.title h3 {
+    font-size: 50px;
+    color: #3A395E;
+}
+
+.services .services-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+.services .services-row .box {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F6FF;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.services .services-row .box i {
+    color: #fff;
+    font-size: 35px;
+    margin-top: 12px;
+}
+
+.services .services-row .box h4 {
+    color: #7051EF;
+    font-size: 22px;
+}
+.services .services-row .box p {
+    width: 70%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services .services-row .box span {
+    width: 60px;
+    height: 60px;
+    background-color: #7051EF;
+    border-radius: 50%;
+    position: relative;
+}
+
+.services .services-row .box:hover {
+    transition: .7s;
+    margin-top: 10px;
+    box-shadow: 1px 5px 15px 1px grey;
+}
+
+
+/* projects */
+.projects {
+    height: 150vh;
+}
+
+.projects .projects-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.projects .projects-row .projects-box {
+    width: 350px;
+    height: 200px;
+    /* background-color: red; */
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.projects .projects-box img{
+    width: fit-content;
+    width: 350px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+.projects .projects-box p {
+    position: relative;
+    top: -70%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+    
+}
+.projects .projects-box img:hover {
+    opacity:0.1;
+    transition:0.5s ease;
+}
+
+.projects .projects-box img:hover + p {
+    display: block;
+    color: #7051EF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* contact */
+.contact {
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+.contact-info a {
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contact-info i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+
+form input {
+    padding: 15px;
+    width: 400px;
+    background-color: #f7f6ff;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #3A395E;
+    border: 0px;
+    border: 2px solid #f7f6ff;
+}
+form textarea {
+    padding: 15px;
+    min-width: 400px;
+    height: 100px;
+    background-color: #f7f6ff;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 10px 0px;
+    border: 0px;
+    border: 2px solid #f7f6ff;
+    resize: none;
+
+}
+form input , .form textarea {
+    border-radius: 10px;
+}
+
+form input::placeholder{
+    color: #7051EF;
+    opacity: 60%;
+}
+
+form input:focus{
+    border: 2px solid #7051EF;
+    outline: none;
+}
+
+form textarea::placeholder{
+    color: #7051EF;
+    opacity: 60%;
+}
+form textarea:focus{
+    border: 2px solid #7051EF;
+    outline: none;
+}
+form .submit{
+    width: 400px;
+    background-color: #7051EF;
+    color: white;
+    border-radius: 15px;
+    padding: 15px 0px;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.5s ease;
+    margin-top: 15px;
+}
+
+form .submit:hover {
+    cursor: pointer;
+    background-color: #f7f6ff;
+    color: #3A395E;
+    transition: 0.5s ease;
+}
+
+
+/* footer */
+footer {
+    background-color: #f7f6ff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info a {
+
+        text-decoration: none;
+}
+
+#p01{
+    margin-left: 200px;
+}
+
+.icons {
+   margin-left: 200px;
+}
+#p01 i {
+    margin-right: 5px;
+}
+.icons i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width:1080px){
+    .services .services-row {
+        flex-wrap: wrap;
+    }
+    .projects {
+        margin-top: 250px;
+    }
+    .contact {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .aboutus .info {
+        flex-direction: column;
+        margin-left: -50px;
+    }
+    .aboutus .info .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #btns {
+        display: flex;
+    }
+    .services {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .projects {
+        margin-top: 700px;
+        margin-left: 50px;
+    }
+    .aboutus .info .about-text hr {
+        display: none;
+    }
+    .contact {
+        margin-top: 1200px;
+        margin-left: 50px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -70px;
+    }
+    .form {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    footer {
+        margin-top: 100px;
+    }
+    .info a {
+        display: none;
+    }
+    .icons {
+        display: none;
+    }
+    #p01 {
+        margin-left: 70px;
+    }
+    nav {
+        margin-left: 70px;
+    }
+
+}
+
+@media only screen and (max-width:888) {
+    .aboutus .info {
+        flex-direction: column;
+    }
+    .aboutus .info .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
